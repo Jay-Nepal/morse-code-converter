@@ -34,14 +34,14 @@ while True:
         print('Thank you, come again!')
         break
     elif user_choice == '1':
-        english_input = input('Please enter the English sentence to convert: ').upper()
+        english_input = input('Please enter the English sentence to convert: \n').upper()
         converted_output = translateToMorse(english_input)
     elif user_choice == '2':
-        morse_input = input('Please enter the Morse code to convert: ')
+        morse_input = input('Please enter the Morse code to convert: \n')
         converted_output = translateToEnglish(morse_input)
 
     if converted_output:
-        print(f'The translated output is: {converted_output}')
+        print(f'The translated output is: \n{converted_output}')
     else:
         print('Invalid input, program ending')
         break
